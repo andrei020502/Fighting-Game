@@ -8,14 +8,14 @@ using UnityEngine.SceneManagement;
 
 public class GameStatus : MonoBehaviour
 {
+   public string player1Name;
+   public string player2Name;
    
-
     void Start()
     {
         
     }
 
-    
     void Update()
     {
         
