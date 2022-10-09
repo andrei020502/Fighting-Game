@@ -10,16 +10,13 @@ public class GameStatus : MonoBehaviour
 {
    public string player1Name;
    public string player2Name;
+   public int playermaxhp;
+   public int player1HP;
+   public int player2HP;
+   public int playerturn;
+   public int winner;
    
-    void Start()
-    {
-        
-    }
 
-    void Update()
-    {
-        
-    }
 
     public void NextScene()
     {
@@ -29,6 +26,12 @@ public class GameStatus : MonoBehaviour
     public void quitapp()
     {
         Application.Quit();
+    }
+    void Start()
+    {
+       DontDestroyOnLoad(gameObject);
+       
+        playerturn = 1;
     }
 }
 
