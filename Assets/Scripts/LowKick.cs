@@ -21,11 +21,11 @@ public class LowKick : MonoBehaviour
       int damage = attackOrMissed(65,6);
       if (gamestatus.playerturn == 0) {
             videoPlayer.clip = isHitOrMissed(damage, p1LowK, p1LowKMiss);
-            Invoke("setToIdle", 3.0f);
+            Invoke("setToIdle", 1.9f);
     }
         else {
         videoPlayer.clip = isHitOrMissed(damage, p2LowK, p2LowKMiss);
-        Invoke("setToIdle", 3.0f);
+        Invoke("setToIdle", 3.3f);
 }
     if (gamestatus.playerturn == 0 ) {
     gamestatus.player2HP -= damage;
@@ -36,7 +36,7 @@ public class LowKick : MonoBehaviour
     gamestatus.player1HP -= damage;
     gamestatus.playerturn = 0;
     }
-     Invoke("MovetoWinner", 4.0f);
+     Invoke("MovetoWinner", 5.0f);
     }
       int attackOrMissed(int accuracy, int damage) {
         int random = UnityEngine.Random.Range(0, 100);

@@ -23,19 +23,18 @@ public class LowPunch : MonoBehaviour
       if (gamestatus.playerturn == 0) {
             videoPlayer.clip = isHitOrMissed(damage, p1LowP, p1LowPMiss);
 
-           Invoke("setToIdle", 3.0f);
+           Invoke("setToIdle", 2.0f);
 
            
     }
         else {
         videoPlayer.clip =  isHitOrMissed(damage, p2LowP, p2LowPMiss);
-         Invoke("setToIdle", 3.0f);
+         Invoke("setToIdle", 2.5f);
 }
 
     if (gamestatus.playerturn == 0 ) {
     gamestatus.player2HP -= damage;
     gamestatus.playerturn = 1;
-    Debug.Log("50");
     }
      else if (gamestatus.playerturn == 1 ) {
     gamestatus.player1HP -= damage;

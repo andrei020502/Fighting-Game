@@ -21,11 +21,11 @@ public class Highpunch : MonoBehaviour
        int damage = attackOrMissed(55,12);
       if (gamestatus.playerturn == 0) {
             videoPlayer.clip = isHitOrMissed(damage, p1HighP, p1HighPMiss);
-            Invoke("setToIdle", 3.0f);
+            Invoke("setToIdle", 3.3f);
     }
         else {
         videoPlayer.clip = isHitOrMissed(damage, p2HighP, p2HighPMiss);;
-        Invoke("setToIdle", 3.0f);
+        Invoke("setToIdle", 3.4f);
 }
       
     if (gamestatus.playerturn == 0 ) {

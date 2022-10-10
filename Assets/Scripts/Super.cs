@@ -21,11 +21,11 @@ public class Super : MonoBehaviour
       int damage = attackOrMissed(90,25);
       if (gamestatus.playerturn == 0) {
             videoPlayer.clip = isHitOrMissed(damage, p1Super, p1SuperMiss);
-            Invoke("setToIdle", 3.0f);
+            Invoke("setToIdle", 4.0f);
     }
         else {
         videoPlayer.clip = isHitOrMissed(damage, p2Super, p2SuperMiss);
-        Invoke("setToIdle", 3.0f);
+        Invoke("setToIdle", 4.0f);
 }
     
       

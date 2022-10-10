@@ -22,17 +22,17 @@ public class HighKick : MonoBehaviour
       if (gamestatus.playerturn == 0) {
           videoPlayer.clip = isHitOrMissed(damage, p1HighK, p1HighKMiss);
             videoPlayer.clip = p1HighK;
-            Invoke("setToIdle", 3.0f);
+            Invoke("setToIdle", 3.7f);
     }
         else {
         videoPlayer.clip = isHitOrMissed(damage, p2HighK, p2HighKMiss);
-        Invoke("setToIdle", 3.0f);
+        Invoke("setToIdle", 3.7f);
         }
       
     if (gamestatus.playerturn == 0 ) {
     gamestatus.player2HP -= damage;
     gamestatus.playerturn = 1;
-    Debug.Log("50");
+   
     }
      else if (gamestatus.playerturn == 1 ) {
     gamestatus.player1HP -= damage;
